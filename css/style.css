@@ -1,0 +1,27 @@
+/*
+main-color: #fd4116
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+
+body {
+    background:#efeeee;
+    font-family: 'Roboto Mono';
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+
+ul > li {
+    display:inline-block;
+}
+
+ul > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
