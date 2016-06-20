@@ -27,7 +27,7 @@ ul > li:before {
 }
 
 header {
-    padding: 100px 10px;
+    padding: 30px 10px;
 }
 
 .logo {
@@ -153,5 +153,43 @@ label {
 
     footer {
         margin: 10px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .link-flex-child {
+        width: 50%;
+    }
+    .link-flex-child a {
+        width: 210px;
+        text-align: left;
+    }
+    .background {
+        height: 100vh;
+    }
+    .anchor-link {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+    }
+
+    header {
+        padding: 50px 10px;
+    }
+
+    footer {
+        margin: 10px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+    .anchor-link {
+        bottom: 20px;
+    }
+    header {
+        padding: 100px 10px;
     }
 }
