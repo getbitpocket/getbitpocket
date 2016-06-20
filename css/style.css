@@ -109,6 +109,28 @@ footer {
     margin: 80px 10px;
 }
 
+#block {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 300ms linear;
+    -moz-transition: height 300ms linear;
+    -o-transition: height 300ms linear;
+    transition: height 300ms linear;
+}
+
+label {
+    cursor: pointer;
+}
+
+.anchor-link {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.anchor-link img {
+    width: 30px;
+}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -122,6 +144,13 @@ footer {
     .background {
         height: 100vh;
     }
+    .anchor-link {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+    }
+
     footer {
         margin: 10px;
     }
