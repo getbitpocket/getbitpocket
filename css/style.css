@@ -72,8 +72,22 @@ header img {
 }
 .phone-bg {
     display:inline-block;
+}
+
+.phone-bg-1 {
     background: url(../img/app-screen-1.png) no-repeat center center;
 }
+.phone-bg-2 {
+    background: url(../img/app-screen-2.png) no-repeat center center;
+}
+.phone-bg-3 {
+    background: url(../img/app-screen-3.png) no-repeat center center;
+}
+.phone-bg-4 {
+    background: url(../img/app-screen-4.png) no-repeat center center;
+}
+
+    
 
 .btn-special {
     width: 100%;
