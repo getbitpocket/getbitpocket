@@ -27,21 +27,23 @@ ul > li:before {
 }
 
 header {
-    padding: 30px 10px;
+    padding: 5% 0;
+    text-align: center;
 }
 
-.logo {
-    display: block;
-    text-align: center;
-    line-height: 70px;
-    vertical-align: middle;
+header img {
+    display:inline-block !important;
+}
+
+@media(max-width:768px) {
+    header {
+        padding:30px 20px;
+    }
 }
 
 .slogan {
-    display: block;
-    text-align: center;
-    line-height: 70px;
-    vertical-align: middle;
+    margin-top:15px;
+    margin-bottom:20px;
     color: #FFF;
     font-size: 20px;
     font-weight: 400;
@@ -55,50 +57,47 @@ header {
     background-size: cover;
 }
 
+.bitpocket-docs header {
+    background: url(../img/background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .phone {
     display: block;
     text-align: center;
     padding-bottom: 60px;
 }
 .phone-bg {
+    display:inline-block;
     background: url(../img/app-screen-1.png) no-repeat center center;
 }
 
-.links-flex-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.link-flex-child {
+.btn-special {
     width: 100%;
-    padding: 20px 0;
-
-}
-
-.link-flex-child-top {
-
-}
-
-.link-flex-child img {
-    width: 160px;
-    height: auto;
-}
-
-.link-flex-child a {
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    vertical-align: middle;
+    height:60px;    
     display: block;
     border-radius: 10px;
     text-align: center;
     background: rgba(0,0,0,0.8);
+    margin-bottom:20px;
+}
+
+.btn-special img {
+    width: 160px;   
+    height: auto;
 }
 
 .top-title, .topic-title {
     font-size: 20px;
     font-weight: 500;
     padding: 20px 0 10px 0;
+}
+
+.topic {
+    margin-bottom:30px;
 }
 
 section {
@@ -123,7 +122,10 @@ label {
 }
 
 .anchor-link {
-    display: block;
+    margin-left:-25px;
+    position:absolute;
+    bottom:10px;
+    left:50%;
     text-align: center;
     padding: 20px;
 }
@@ -132,57 +134,38 @@ label {
     width: 30px;
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    .link-flex-child {
-        width: 50%;
-    }
-    .link-flex-child a {
-        width: 210px;
-        text-align: left;
-    }
-    .anchor-link {
-        bottom: 10px;
-    }
-
-    footer {
-        margin: 10px;
-    }
-}
-
-/* Large devices (large desktops, 1400px and up) */
-@media (min-width: 1024px) {
+@media(min-width:768px) {
     .background {
         height: 100vh;
     }
-    .anchor-link {
-        padding: 5px;
+}
+@media(max-width:768px) {
+    .background {
+        padding-bottom:40px;
     }
 }
 
-
-/* Large devices (large desktops, 1400px and up) */
-@media (min-width: 1200px) {
-    .background {
-        height: 100%;
-    }
-    .anchor-link {
-        bottom: 20px;
-    }
+.docs-block .icon {
+    margin-right:5px;
+    display:inline-block;
+    color:white;
+    background:#6a6d7a;
+    border-radius:50px;
+    width:30px;
+    height:30px;
+    overflow: hidden;
+    text-align:center;
+    line-height: 1;
+    padding-top:7px;
+    font-size:16px;
+    vertical-align: bottom;
 }
 
-/* Large devices (large desktops, 1400px and up) */
-@media (min-width: 1400px) {
-    .anchor-link {
-        bottom: 10px;
-    }
-    .background {
-        height: 100vh;
-    }
-    .anchor-link {
-        bottom: 20px;
-    }
-    header {
-        padding: 100px 10px;
-    }
+.docs-block {
+    padding-top:60px;
+    padding-bottom:30px;
+}
+
+.docs-block + .docs-block {
+    border-top:1px solid #6a6d7a;
 }

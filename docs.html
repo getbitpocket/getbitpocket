@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BitPocket - User Documentation</title>
+    <meta name="description" content="BitPocket is a mobile app for merchants, which allows them to accept Bitcoin Payments at the point of sale.">
+    <meta name="keywords" content="Bitcoin, BitPocket, Cryptocurrency">
+    <meta name="author" content="Stefan Huber">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="bitpocket-docs">
+
+<header>
+    <a href="http://bitpocket.at"><img class="img-responsive" src="img/bitpocket-logo.svg" alt="Bitpocket Logo"></a>
+</header>
+
+<section>
+    <div class="container">
+
+        <div class="row docs-block">
+            <div class="col-sm-5 col-md-4 col-lg-4 col-lg-offset-1">
+                <div class="phone">
+                    <img class="phone-bg img-responsive" src="img/bitpocket-android.png" alt="Pitpocket App Android iOS">
+                </div>
+            </div>
+            <div class="col-sm-7 col-md-8 col-lg-4">
+                <div class="row">
+                    <div class="col-xs-12 topic">                           
+                        <div class="topic-title"><span class="icon">1</span> Configure Bitcoin Address</div>
+                        <p>In order to use BitPocket a Bitcoin Address is required, which is under your control. At first startup of the BitPocket App the Bitcoin Address needs to be set.</p>
+                        <p>BitPocket allows two different configuration options for addresses:</p>
+                        <ul>
+                            <li><b>Static Address:</b> The configuration can be based on a Static Address. All payments with will always go to the configured Static Address. It will be easy also for others to track all transactions publicly on the blockchain.</li>
+                            <li><b>Master Public Key:</b> In constrast to the Static Address a Master Public Key can be used. Based on an index a new Bitcoin Address can be generated for each payment and your privacy is highly improved. Many wallets allow for exporting the respective Master Public Key (e.g. Electrum, Android Bitcoin Wallet).</li>
+                        </ul>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+
+        <div class="row docs-block">
+            <div class="col-sm-7 col-md-8 col-lg-4 col-lg-offset-2">
+                <div class="row">
+                    <div class="col-xs-12 topic">                           
+                        <div class="topic-title"><span class="icon">2</span> Additional Configuration Options</div>
+                        <p>Inside the Settings section of the BitPocket App additional configuration options can be found:</p>
+                        <ul>
+                            <li><b>Merchant Name:</b> Each Bitcoin Payment Request offers a label to display e.g. the merchants name to the payer. The label is encoded into the QR-Code.</li>
+                            <li><b>Currency Format:</b> The underlying currency format of the app. (e.g. 1,000.00 or 1.000,00)</li>
+                            <li><b>Bitcoin Unit:</b> There are different bitcoin units: BTC, mBTC or bits.</li>
+                            <li><b>Currency and Currency Exchange Rate:</b> Currently Blockchain.info and BitcoinAverage are the two integrated providers of exchange rates, which are updated at a 5 minute interval.</li>
+                            <li><b>Static Address:</b> The Static Address can be reset, activated or deactivated.</li>
+                            <li><b>Master Public Key:</b> The Master Public Key can be reset, activated or deactivated. Additionally, an index can be set, at which position the address generation should be started.</li>
+                        </ul>
+                    </div>                        
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-4 col-lg-4">
+                <div class="phone">
+                    <img class="phone-bg img-responsive" src="img/bitpocket-android.png" alt="Pitpocket App Android iOS">
+                </div>
+            </div>            
+        </div>
+
+        <div class="row docs-block">
+            <div class="col-sm-5 col-md-4 col-lg-4 col-lg-offset-1">
+                <div class="phone">
+                    <img class="phone-bg img-responsive" src="img/bitpocket-android.png" alt="Pitpocket App Android iOS">
+                </div>
+            </div>
+            <div class="col-sm-7 col-md-8 col-lg-4">
+                <div class="row">
+                    <div class="col-xs-12 topic">                           
+                        <div class="topic-title"><span class="icon">3</span> Request Bitcoin Payments</div>
+                        <p>The main screen of the App allows for the input of the respective payment amount.</p>
+                        <p>After the "request amount" button is clicked, the following is happening:</p>
+                        <ul>
+                            <li><b>Payment Request:</b> A payment request will be visible and encoded as a QR-Code. The payer can easily scan this code with a respective Bitcoin Wallet.</li>
+                            <li><b>Payment Verification:</b> For approximately 1.5 minutes the payment request will be presented before it will time out. If the payer made the payment withing this timeframe a payment result screen is shown.</li>
+                            <li><b>Payment Result:</b If the payer has successfully payed the requested amount a payment result screen will be shown.></li>
+                        </ul>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+
+        <div class="row docs-block">
+            <div class="col-sm-7 col-md-8 col-lg-4 col-lg-offset-2">
+                <div class="row">
+                    <div class="col-xs-12 topic">                           
+                        <div class="topic-title"><span class="icon">4</span> Transaction History</div>
+                        <p>All transactions will be available within a history list.</p>
+                        <ul>
+                            <li>Each transaction has a icon which is colored either green or yellow. Green means that more than 6 transaction confirmations are available. Yellow means that there are less that 6.</li>
+                            <li>Each transaction item within the list can be swipped to the left to open additional options. Either the transaction can be removed from the list (The Bitcoins are untouched), or details can be looked up, within a blockchain explorer.</li>
+                        </ul>
+                    </div>                        
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-4 col-lg-4">
+                <div class="phone">
+                    <img class="phone-bg img-responsive" src="img/bitpocket-android.png" alt="Pitpocket App Android iOS">
+                </div>
+            </div>            
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
